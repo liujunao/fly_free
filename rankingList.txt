@@ -1,0 +1,16 @@
+liu : 20
+li : 30
+qw : 40
+wer : 35
+weqw : 60
+qwe : 70
+wert : 80
+dfg : 90
+liu : 20
+li : 30
+qw : 40
+wer : 50
+weqw : 60
+qwe : 70
+wert : 80
+dfg : 90
