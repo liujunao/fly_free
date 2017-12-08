@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e61702-b592-44a1-8b45-7507e47966e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/controller/CommonController.class" afterPath="$PROJECT_DIR$/classes/game/controller/CommonController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/controller/GameController$1.class" afterPath="$PROJECT_DIR$/classes/game/controller/GameController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/controller/GameController.class" afterPath="$PROJECT_DIR$/classes/game/controller/GameController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel$1.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel$2.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel$3.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartPattern$1.class" afterPath="$PROJECT_DIR$/classes/game/views/StartPattern$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartPattern$2.class" afterPath="$PROJECT_DIR$/classes/game/views/StartPattern$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartPattern.class" afterPath="$PROJECT_DIR$/classes/game/views/StartPattern.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/fly_free_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/GameOver.class" afterPath="$PROJECT_DIR$/classes/game/views/GameOver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/Ranking.class" afterPath="$PROJECT_DIR$/classes/game/views/Ranking.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rankingList.txt" afterPath="$PROJECT_DIR$/rankingList.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/controller/CommonController.java" afterPath="$PROJECT_DIR$/src/game/controller/CommonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/controller/GameController.java" afterPath="$PROJECT_DIR$/src/game/controller/GameController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/SelectLevel.java" afterPath="$PROJECT_DIR$/src/game/views/SelectLevel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/StartPattern.java" afterPath="$PROJECT_DIR$/src/game/views/StartPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/GameOver.java" afterPath="$PROJECT_DIR$/src/game/views/GameOver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/Ranking.java" afterPath="$PROJECT_DIR$/src/game/views/Ranking.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,26 +27,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CommonController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/controller/CommonController.java">
+      <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/views/GameFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1026">
-              <caret line="435" column="26" lean-forward="false" selection-start-line="435" selection-start-column="26" selection-end-line="435" selection-end-column="26" />
+            <state relative-caret-position="88">
+              <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
               <folding>
-                <element signature="docComment;class#CommonController#0" expanded="false" />
-                <element signature="method#enemyMove#0;class#CommonController#0" expanded="false" />
-                <element signature="method#enemyBulletVSHeroBullet#0;class#CommonController#0" expanded="false" />
-                <element signature="method#heroBulletAndEnemyBullets#0;class#CommonController#0" expanded="false" />
-                <element signature="method#heroBulletAndBossBullets#0;class#CommonController#0" expanded="false" />
-                <element signature="method#enemyBulletVSHero#0;class#CommonController#0" expanded="false" />
-                <element signature="method#bossBulletVSHero#0;class#CommonController#0" expanded="false" />
-                <element signature="method#heroBullet1VSEnemy#0;class#CommonController#0" expanded="false" />
-                <element signature="method#heroBullet2VSEnemy#0;class#CommonController#0" expanded="false" />
-                <element signature="method#traverseEnemy#0;class#CommonController#0" expanded="false" />
-                <element signature="method#heroBulletVSBoss#0;class#CommonController#0" expanded="false" />
-                <element signature="method#bossFire#0;class#CommonController#0" expanded="false" />
-                <element signature="method#addNewLife#0;class#CommonController#0" expanded="false" />
-                <element signature="method#addLifeMove#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;class#GameFrame#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -63,7 +42,7 @@
       <file leaf-file-name="StartMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/views/StartMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
+            <state relative-caret-position="-234">
               <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding>
                 <element signature="docComment;class#StartMenu#0" expanded="false" />
@@ -72,38 +51,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/controller/GameController.java">
+      <file leaf-file-name="GameOver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/views/GameOver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="218" column="22" lean-forward="false" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+            <state relative-caret-position="479">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
-                <element signature="docComment;class#GameController#0" expanded="false" />
-                <element signature="method#keyTyped#0;class#GameController#0" expanded="false" />
-                <element signature="method#keyPressed#0;class#GameController#0" expanded="false" />
-                <element signature="method#keyReleased#0;class#GameController#0" expanded="false" />
-                <element signature="method#vk#0;class#GameController#0" expanded="false" />
+                <element signature="docComment;class#GameOver#0" expanded="false" />
+                <element signature="class#MyFocusListener#0;class#GameOver#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnemyBullet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/model/EnemyBullet.java">
+      <file leaf-file-name="Ranking.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/views/Ranking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartPattern.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/views/StartPattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#Ranking#0" expanded="false" />
+                <element signature="method#getInfo#0;class#Ranking#0" expanded="false" />
+                <element signature="method#addComponent#0;class#Ranking#0" expanded="false" />
+                <element signature="method#Ranking#0;class#Ranking#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,7 +82,7 @@
       <file leaf-file-name="SelectLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/views/SelectLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
+            <state relative-caret-position="-947">
               <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#SelectLevel#0" expanded="false" />
@@ -120,23 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/views/GameFrame.java">
+      <file leaf-file-name="StartPattern.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/views/StartPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-              <folding>
-                <element signature="docComment;class#GameFrame#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeroBullet2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/model/HeroBullet2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="134">
+              <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -185,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/game/model/EnemyBullet.java" />
         <option value="$PROJECT_DIR$/src/game/model/FlyObject.java" />
         <option value="$PROJECT_DIR$/src/game/controller/DoDispose.java" />
-        <option value="$PROJECT_DIR$/src/game/views/GameOver.java" />
         <option value="$PROJECT_DIR$/src/game/views/RankingList.java" />
         <option value="$PROJECT_DIR$/test/RankingTest.java" />
         <option value="$PROJECT_DIR$/rankingList.txt" />
@@ -201,11 +159,12 @@
         <option value="$PROJECT_DIR$/src/game/model/Resources.java" />
         <option value="$PROJECT_DIR$/src/game/views/StartMenu.java" />
         <option value="$PROJECT_DIR$/src/game/views/GameFrame.java" />
-        <option value="$PROJECT_DIR$/src/game/views/Ranking.java" />
         <option value="$PROJECT_DIR$/src/game/views/SelectLevel.java" />
         <option value="$PROJECT_DIR$/src/game/controller/CommonController.java" />
         <option value="$PROJECT_DIR$/src/game/views/StartPattern.java" />
         <option value="$PROJECT_DIR$/src/game/controller/GameController.java" />
+        <option value="$PROJECT_DIR$/src/game/views/GameOver.java" />
+        <option value="$PROJECT_DIR$/src/game/views/Ranking.java" />
       </list>
     </option>
   </component>
@@ -306,10 +265,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -329,7 +284,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fly_free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fly_free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,6 +328,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fly_free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fly_free" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fly_free_jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -365,7 +360,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/360极速浏览器下载/%5Bwww.java1234.com%5DJava实现仿雷电游戏/RaidenLite" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2043379" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -929,7 +924,7 @@
       <workItem from="1512459438071" duration="9018000" />
       <workItem from="1512470591602" duration="5577000" />
       <workItem from="1512712352267" duration="3755000" />
-      <workItem from="1512717504804" duration="2097000" />
+      <workItem from="1512717504804" duration="2990000" />
     </task>
     <task id="LOCAL-00001" summary="大二上面向对象课设，潜艇大战">
       <created>1512468561379</created>
@@ -945,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512717057264</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="大二上面向对象课设，潜艇大战">
+      <created>1512719623985</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512719623985</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -981,7 +983,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122106000" />
+    <option name="totallyTimeSpent" value="122999000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1010,7 +1012,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18305598" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1143,19 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/GameOver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#GameOver#0" expanded="false" />
-            <element signature="class#1633:2174" expanded="false" />
-            <element signature="class#MyFocusListener#0;class#GameOver#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,49 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/Ranking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-          <folding>
-            <element signature="docComment;class#Ranking#0" expanded="false" />
-            <element signature="method#getInfo#0;class#Ranking#0" expanded="false" />
-            <element signature="method#addComponent#0;class#Ranking#0" expanded="false" />
-            <element signature="method#Ranking#0;class#Ranking#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/StartMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
-          <folding>
-            <element signature="docComment;class#StartMenu#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/SelectLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#SelectLevel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/GameFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding>
-            <element signature="docComment;class#GameFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/model/EnemyBullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1368,6 +1314,20 @@
           <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
             <element signature="docComment;class#Enemy#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controller/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="218" column="22" lean-forward="false" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;class#GameController#0" expanded="false" />
+            <element signature="method#keyTyped#0;class#GameController#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#GameController#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#GameController#0" expanded="false" />
+            <element signature="method#vk#0;class#GameController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1395,25 +1355,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/StartPattern.java">
+    <entry file="file://$PROJECT_DIR$/src/game/views/GameFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="88">
+          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding>
+            <element signature="docComment;class#GameFrame#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controller/GameController.java">
+    <entry file="file://$PROJECT_DIR$/src/game/views/GameOver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="218" column="22" lean-forward="false" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+        <state relative-caret-position="479">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#GameController#0" expanded="false" />
-            <element signature="method#keyTyped#0;class#GameController#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#GameController#0" expanded="false" />
-            <element signature="method#keyReleased#0;class#GameController#0" expanded="false" />
-            <element signature="method#vk#0;class#GameController#0" expanded="false" />
+            <element signature="docComment;class#GameOver#0" expanded="false" />
+            <element signature="class#MyFocusListener#0;class#GameOver#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/views/Ranking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Ranking#0" expanded="false" />
+            <element signature="method#getInfo#0;class#Ranking#0" expanded="false" />
+            <element signature="method#addComponent#0;class#Ranking#0" expanded="false" />
+            <element signature="method#Ranking#0;class#Ranking#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/views/SelectLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-947">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#SelectLevel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/views/StartMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+          <folding>
+            <element signature="docComment;class#StartMenu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/views/StartPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1423,10 +1423,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>fly_free:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2043379" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
