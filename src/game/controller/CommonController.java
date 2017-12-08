@@ -14,13 +14,15 @@ public class CommonController {
 
     /**
      * 敌人移动
+     *
      * @param time     自定义时间间隔
      * @param enemies1 敌人1
      * @param enemies2 敌人2
      * @param enemies3 敌人3
+     * @param boss
      * @param index    关卡标记
      */
-    public void enemyMove(long time, List<Enemy> enemies1, List<Enemy> enemies2, List<Enemy> enemies3, int index) {
+    public void enemyMove(long time, List<Enemy> enemies1, List<Enemy> enemies2, List<Enemy> enemies3, Boss boss, int index) {
         for (Enemy enemy1 : enemies1) {
             enemy1.move(time, index);
         }
@@ -30,10 +32,14 @@ public class CommonController {
         for (Enemy enemy3 : enemies3) {
             enemy3.move(time, index);
         }
+        if (boss != null) {
+            boss.move(time, index);
+        }
     }
 
     /**
      * 敌人与玩家相撞
+     *
      * @param i             敌人容器(List)的尺寸
      * @param enemies       敌人容器(List)
      * @param hero          玩家
@@ -59,6 +65,7 @@ public class CommonController {
 
     /**
      * 判断玩家子弹与敌人子弹的关系
+     *
      * @param heroBullet1s  玩家子弹1
      * @param heroBullet2s  玩家子弹2
      * @param enemyBullet1s 敌人子弹1
@@ -66,7 +73,7 @@ public class CommonController {
      * @param enemyBullet3s 敌人子弹3
      */
     public void enemyBulletVSHeroBullet(List<HeroBullet1> heroBullet1s, List<HeroBullet2> heroBullet2s, List<EnemyBullet> enemyBullet1s,
-                                        List<EnemyBullet> enemyBullet2s, List<EnemyBullet> enemyBullet3s) {
+                                        List<EnemyBullet> enemyBullet2s, List<EnemyBullet> enemyBullet3s,List<BossBullet> bossBullets) {
         //遍历玩家子弹1
         for (int i = 0; i < heroBullet1s.size(); i++) {
             int hx = heroBullet1s.get(i).x;
@@ -77,6 +84,8 @@ public class CommonController {
             heroBulletAndEnemyBullets(i, hx, hy, heroBullet1s, heroBullet2s, enemyBullet2s, 1);
             //遍历子弹3
             heroBulletAndEnemyBullets(i, hx, hy, heroBullet1s, heroBullet2s, enemyBullet3s, 1);
+            //遍历 boss 子弹
+            heroBulletAndBossBullets(i,hx,hy,heroBullet1s,heroBullet2s,bossBullets,1);
         }
         //遍历玩家子弹2
         for (int i = 0; i < heroBullet2s.size(); i++) {
@@ -88,12 +97,15 @@ public class CommonController {
             heroBulletAndEnemyBullets(i, hx, hy, heroBullet1s, heroBullet2s, enemyBullet2s, 2);
             //遍历子弹3
             heroBulletAndEnemyBullets(i, hx, hy, heroBullet1s, heroBullet2s, enemyBullet3s, 2);
+            //遍历 boss 子弹
+            heroBulletAndBossBullets(i,hx,hy,heroBullet1s,heroBullet2s,bossBullets,2);
         }
 
     }
 
     /**
      * 遍历敌人子弹与玩家子弹的关系
+     *
      * @param i            玩家子弹容器的一个子弹编号
      * @param hx           玩家子弹横坐标
      * @param hy           玩家子弹纵坐标
@@ -121,7 +133,37 @@ public class CommonController {
     }
 
     /**
+     * 遍历 boss 子弹与玩家子弹的关系
+     *
+     * @param i            玩家子弹容器的一个子弹编号
+     * @param hx           玩家子弹横坐标
+     * @param hy           玩家子弹纵坐标
+     * @param heroBullet1s 玩家子弹1容器
+     * @param heroBullet2s 玩家子弹2容器
+     * @param bossBullets boss子弹
+     * @param classify     对玩家不同子弹的判定，1：子弹1，2：子弹2
+     */
+    public void heroBulletAndBossBullets(int i, int hx, int hy, List<HeroBullet1> heroBullet1s, List<HeroBullet2> heroBullet2s,
+                                          List<BossBullet> bossBullets, int classify) {
+        for (int j = 0; j < bossBullets.size(); j++) {
+            int ex = bossBullets.get(j).x;
+            int ey = bossBullets.get(j).y;
+            if (hx - ex < 20 && ex - hx < 20 && hy - ey < 20 && ey - hy < 20) {
+                if (classify == 1) {
+                    heroBullet1s.remove(i);
+                }
+                if (classify == 2) {
+                    heroBullet2s.remove(i);
+                }
+                bossBullets.remove(j);
+                continue;
+            }
+        }
+    }
+
+    /**
      * 子弹与玩家相撞
+     *
      * @param i            敌人子弹容器尺寸
      * @param enemyBullets 敌人子弹容器
      * @param hero         玩家
@@ -130,22 +172,47 @@ public class CommonController {
     public void enemyBulletVSHero(int i, List<EnemyBullet> enemyBullets, Hero hero, List<Lives> lives) {
         int hx = hero.getX();
         int hy = hero.getY();
-        int bx = enemyBullets.get(i).getX();
-        int by = enemyBullets.get(i).getY();
-        if (hx - bx < 120 && bx - hx < 20 && hy - by < 20 && by - hy < 120) {
+        int ex = enemyBullets.get(i).getX();
+        int ey = enemyBullets.get(i).getY();
+        if (hx - ex < 20 && ex - hx < 120 && hy - ey < 120 && ey - hy < 20) {
             enemyBullets.remove(enemyBullets.get(i));
             GameController.life--;
             if (GameController.life > 0 && GameController.life < lives.size()) {
                 lives.remove(GameController.life);
             }
         }
-        if (by > 600 - 20 || by < 0 || bx < 0) {
+        if (ey > 600 - 20 || ey < 0 || ex < 0) {
             enemyBullets.remove(enemyBullets.get(i));
         }
     }
 
     /**
+     *  boss 子弹与玩家相撞
+     * @param i 子弹容器中遍历到相应子弹的编号
+     * @param bossBullets
+     * @param hero
+     * @param lives 血条容器
+     */
+    public void bossBulletVSHero(int i,List<BossBullet> bossBullets,Hero hero,List<Lives> lives){
+        int hx = hero.getX();
+        int hy = hero.getY();
+        int bx = bossBullets.get(i).getX();
+        int by = bossBullets.get(i).getY();
+        if (hx - bx < 20 && bx - hx < 120 && hy - by < 120 && by - hy < 20){
+            bossBullets.remove(bossBullets.get(i));
+            GameController.life--;
+            if (GameController.life > 0 && GameController.life < lives.size()) {
+                lives.remove(GameController.life);
+            }
+        }
+        if (by > 600 - 20 || by < 0 || bx < 0){
+            bossBullets.remove(bossBullets.get(i));
+        }
+    }
+
+    /**
      * 玩家子弹 1 与敌人相撞
+     *
      * @param i           玩家子弹1尺寸
      * @param heroBullet1 玩家子弹1
      * @param enemy1      敌人容器1
@@ -155,7 +222,7 @@ public class CommonController {
      * @param boss
      */
     public void heroBullet1VSEnemy(int i, List<HeroBullet1> heroBullet1, List<Enemy> enemy1, List<Enemy> enemy2,
-                                   List<Enemy> enemy3, List<HeroBullet2> heroBullet2, Boss boss,int stage) {
+                                   List<Enemy> enemy3, List<HeroBullet2> heroBullet2, Boss boss, int stage) {
         int hx = heroBullet1.get(i).getX();
         int hy = heroBullet1.get(i).getY();
         if (hx > 1000) {
@@ -167,10 +234,10 @@ public class CommonController {
         traverseEnemy(i, hx, hy, 1, enemy2, heroBullet1, heroBullet2, 2);
         //enemy3
         traverseEnemy(i, hx, hy, 1, enemy3, heroBullet1, heroBullet2, 3);
-        if (stage != 0){
+        if (stage != 0) {
             //boss
             if (GameController.mScore > 200) {
-                heroBulletVSBoss(i, hx, hy, boss, 1, heroBullet1, heroBullet2,stage);
+                heroBulletVSBoss(i, hx, hy, boss, 1, heroBullet1, heroBullet2, stage);
             }
         }
 
@@ -178,6 +245,7 @@ public class CommonController {
 
     /**
      * 玩家子弹 2 与敌人相撞
+     *
      * @param i           玩家子弹2容器
      * @param heroBullet2 玩家子弹2
      * @param heroBullet1 玩家子弹1
@@ -187,7 +255,7 @@ public class CommonController {
      * @param boss
      */
     public void heroBullet2VSEnemy(int i, List<HeroBullet2> heroBullet2, List<HeroBullet1> heroBullet1,
-                                   List<Enemy> enemy1, List<Enemy> enemy2, List<Enemy> enemy3, Boss boss,int stage) {
+                                   List<Enemy> enemy1, List<Enemy> enemy2, List<Enemy> enemy3, Boss boss, int stage) {
         int hx = heroBullet2.get(i).getX();
         int hy = heroBullet2.get(i).getY();
         if (hx > 1000) {
@@ -199,16 +267,17 @@ public class CommonController {
         traverseEnemy(i, hx, hy, 2, enemy2, heroBullet1, heroBullet2, 2);
         //enemy3
         traverseEnemy(i, hx, hy, 2, enemy3, heroBullet1, heroBullet2, 3);
-        if (stage != 0){
+        if (stage != 0) {
             //boss
             if (GameController.score > 200) {
-                heroBulletVSBoss(i, hx, hy, boss, 2, heroBullet1, heroBullet2,stage);
+                heroBulletVSBoss(i, hx, hy, boss, 2, heroBullet1, heroBullet2, stage);
             }
         }
     }
 
     /**
      * 遍历不同种类的敌人与玩家子弹的关系
+     *
      * @param i             子弹容器尺寸
      * @param hx            玩家子弹横坐标
      * @param hy            玩家子弹纵坐标
@@ -248,10 +317,10 @@ public class CommonController {
      * @param heroBullet2s 玩家子弹2容器
      */
     public void heroBulletVSBoss(int i, int hx, int hy, Boss boss, int classify, List<HeroBullet1> heroBullets1,
-                                 List<HeroBullet2> heroBullet2s,int stage) {
+                                 List<HeroBullet2> heroBullet2s, int stage) {
         int bx = boss.getX();
         int by = boss.getY();
-        if (GameController.bossBlood1 >= 0  || GameController.bossBlood2 >= 0 || GameController.bossBlood3 >= 0) {
+        if (GameController.bossBlood1 >= 0 || GameController.bossBlood2 >= 0 || GameController.bossBlood3 >= 0) {
             if (hx - bx < 200 && bx - hx < 20 && hy - by < 200 && by - hy < 20) {
                 if (classify == 1) {
                     heroBullets1.remove(heroBullets1.get(i));
@@ -261,11 +330,11 @@ public class CommonController {
                 GameController.money += 90;
                 GameController.score += 100;
                 GameController.mScore += 100;
-                if (stage == 1){
+                if (stage == 1) {
                     GameController.bossBlood1 -= 40;
-                }else if (stage == 2){
+                } else if (stage == 2) {
                     GameController.bossBlood2 -= 40;
-                }else if (stage == 3){
+                } else if (stage == 3) {
                     GameController.bossBlood3 -= 40;
                 }
             }
@@ -298,19 +367,36 @@ public class CommonController {
         }
         if (time % 500 == 0) {
             for (Enemy enemy : enemy3) {
-                EnemyBullet enemyBullet = enemy.fire(20, 20, Resources.eBullet1PNG);
+                EnemyBullet enemyBullet = enemy.fire(20, 20, Resources.eBullet3PNG);
                 enemyBullet3.add(enemyBullet);
             }
         }
     }
 
     /**
+     * boss 发射子弹
+     * @param time 时间间隔
+     * @param bossBullets boss 子弹容器
+     * @param boss
+     * @param stage 关卡
+     */
+    public void bossFire(long time,List<BossBullet> bossBullets,Boss boss,int stage){
+        if (time % 100 == 0 && boss != null){
+            for (int i = 0; i < 7; i++) {
+                BossBullet bossBullet = boss.fire(20,20,Resources.eBullet4PNG);
+                bossBullets.add(bossBullet);
+            }
+        }
+    }
+
+    /**
      * 出现新的敌人
-     * @param time      时间间隔
-     * @param enemy1    敌人1
-     * @param enemy2    敌人2
-     * @param enemy3    敌人3
-     * @param stage     当前关卡
+     *
+     * @param time   时间间隔
+     * @param enemy1 敌人1
+     * @param enemy2 敌人2
+     * @param enemy3 敌人3
+     * @param stage  当前关卡
      */
     public void addNewEnemy(long time, List<Enemy> enemy1, List<Enemy> enemy2, List<Enemy> enemy3, int stage) {
         //设置敌人出现的纵坐标的随机值
@@ -361,11 +447,11 @@ public class CommonController {
             }
             enemy3.add(enemy);
         }
-
     }
 
     /**
      * 出现新的加血
+     *
      * @param time
      * @param addLife
      */
@@ -378,6 +464,7 @@ public class CommonController {
 
     /**
      * 加血移动
+     *
      * @param time
      * @param addLife
      */
@@ -389,6 +476,7 @@ public class CommonController {
 
     /**
      * 玩家获取加血
+     *
      * @param i       加血容器尺寸
      * @param hero    玩家
      * @param addLife 加血类
