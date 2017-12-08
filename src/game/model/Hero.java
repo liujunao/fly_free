@@ -21,7 +21,6 @@ public class Hero extends FlyObject {
 
     public HeroBullet2 launch(){
         HeroBullet2 heroBullet2 = new HeroBullet2(this.x + this.width,this.y + this.height / 2);
-
         return heroBullet2;
     }
 

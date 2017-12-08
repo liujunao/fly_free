@@ -18,7 +18,7 @@ import java.util.List;
  * @author lenovo
  * @date 2017/11/20
  */
-public class GameController extends JPanel implements KeyListener,Serializable{
+public class GameController extends JPanel implements KeyListener, Serializable {
 
     //血量显示
     private List<Lives> lives = new ArrayList<Lives>();
@@ -33,6 +33,8 @@ public class GameController extends JPanel implements KeyListener,Serializable{
     public static int bossBlood1 = 2000;
     public static int bossBlood2 = 2000;
     public static int bossBlood3 = 2000;
+
+    private List<BossBullet> bossBullets = new ArrayList<>();
 
     private List<EnemyBullet> enemyBullet1 = new ArrayList<EnemyBullet>();
     private List<EnemyBullet> enemyBullet2 = new ArrayList<EnemyBullet>();
@@ -53,7 +55,7 @@ public class GameController extends JPanel implements KeyListener,Serializable{
     //每个当前场景的分数
     public static int mScore = 0;
     //关卡
-    public int stage = 1;
+    public int stage;
 
     boolean flag = true;
 
@@ -89,9 +91,9 @@ public class GameController extends JPanel implements KeyListener,Serializable{
                 vkFire = true;
                 break;
             case KeyEvent.VK_K:
-                if (money > 200) {
+                if (money > 50) {
                     vkLaunch = true;
-                    money -= 200;
+                    money -= 50;
                 }
                 break;
         }
@@ -134,12 +136,14 @@ public class GameController extends JPanel implements KeyListener,Serializable{
         for (Lives lives : lives) {
             lives.draw(graphics);
         }
+        System.out.println("lives: " + lives.size());
         for (AddLife addLife : addLife) {
             addLife.draw(graphics);
         }
         for (Enemy enemy1 : enemy1) {
             enemy1.draw(graphics);
         }
+        System.out.println("enemy1： " + enemy1.size());
         for (Enemy enemy2 : enemy2) {
             enemy2.draw(graphics);
         }
@@ -149,6 +153,7 @@ public class GameController extends JPanel implements KeyListener,Serializable{
         for (EnemyBullet enemyBullet1 : enemyBullet1) {
             enemyBullet1.draw(graphics);
         }
+        System.out.println("enemyBullet1: " + enemyBullet1.size());
         for (EnemyBullet enemyBullet2 : enemyBullet2) {
             enemyBullet2.draw(graphics);
         }
@@ -166,6 +171,9 @@ public class GameController extends JPanel implements KeyListener,Serializable{
         if (stage != 0) {
             if (mScore >= 200) {
                 if (bossBlood1 >= 0 || bossBlood2 >= 0 || bossBlood3 >= 0) {
+                    for (BossBullet bossBullet : bossBullets){
+                        bossBullet.draw(graphics);
+                    }
                     boss.draw(graphics);
                     graphics.setColor(Color.red);
                     graphics.drawString("bossBlood: ", 10, 135);
@@ -201,7 +209,7 @@ public class GameController extends JPanel implements KeyListener,Serializable{
             HeroBullet1 bullet1 = hero.fire();
             heroBullet1.add(bullet1);
         }
-        if (vkLaunch && time % 20 == 0) {
+        if (vkLaunch) {
             HeroBullet2 bullet2 = hero.launch();
             heroBullet2.add(bullet2);
         }
@@ -224,21 +232,25 @@ public class GameController extends JPanel implements KeyListener,Serializable{
             background = new Background(0, 0, Resources.background3JPG);
         }
         //初始化 boss
-        if (stage == 1) {
-            boss = new Boss(800, 200, Resources.boss1PNG);
-        } else if (stage == 2) {
-            boss = new Boss(800, 200, Resources.boss2PNG);
-        } else if (stage == 3) {
-            boss = new Boss(800, 200, Resources.boss3PNG);
+        if (boss == null) {
+            if (stage == 1) {
+                boss = new Boss(800, 200, Resources.boss1PNG);
+            } else if (stage == 2) {
+                boss = new Boss(800, 200, Resources.boss2PNG);
+            } else if (stage == 3) {
+                boss = new Boss(800, 200, Resources.boss3PNG);
+            }
         }
+        //boss 发射子弹
+        commonController.bossFire(time,bossBullets,boss,stage);
         //出现新的敌人
         commonController.addNewEnemy(time, enemy1, enemy2, enemy3, stage);
         //敌人移动
-        commonController.enemyMove(time, enemy1, enemy2, enemy3, 1);
+        commonController.enemyMove(time, enemy1, enemy2, enemy3, boss, stage);
         //敌人发射子弹
         commonController.enemyFire(time, enemy1, enemy2, enemy3, enemyBullet1, enemyBullet2, enemyBullet3);
         //判断玩家子弹与敌人子弹的关系
-        commonController.enemyBulletVSHeroBullet(heroBullet1, heroBullet2, enemyBullet1, enemyBullet2, enemyBullet3);
+        commonController.enemyBulletVSHeroBullet(heroBullet1, heroBullet2, enemyBullet1, enemyBullet2, enemyBullet3,bossBullets);
         //出现新的加血
         commonController.addNewLife(time, addLife);
         //加血移动
@@ -257,6 +269,11 @@ public class GameController extends JPanel implements KeyListener,Serializable{
         for (int i = 0; i < enemy3.size(); i++) {
             commonController.enemyVSHero(i, enemy3, hero, lives, 3);
         }
+        //boss 子弹是否射中玩家
+        for (int i = 0; i < bossBullets.size(); i++) {
+            bossBullets.get(i).move_1(time,stage,i);
+            commonController.bossBulletVSHero(i,bossBullets,hero,lives);
+        }
         //敌人子弹是否射中玩家
         for (int i = 0; i < enemyBullet1.size(); i++) {
             enemyBullet1.get(i).move(time, 1);
@@ -270,7 +287,6 @@ public class GameController extends JPanel implements KeyListener,Serializable{
             enemyBullet3.get(i).move(time, 1);
             commonController.enemyBulletVSHero(i, enemyBullet3, hero, lives);
         }
-
         //玩家是否射中敌人
         //子弹 1
         for (int i = 0; i < heroBullet1.size(); i++) {
@@ -310,6 +326,7 @@ public class GameController extends JPanel implements KeyListener,Serializable{
     public GameController(int stage) {
         mScore = 0;
         this.stage = stage;
+        System.out.println("stage: " + this.stage);
         this.addKeyListener(this);
         hero = new Hero(50, 300);
 
@@ -369,8 +386,5 @@ public class GameController extends JPanel implements KeyListener,Serializable{
             }
         };
         thread.start();
-        if (!flag) {
-            Thread.yield();
-        }
     }
 }

@@ -8,17 +8,13 @@ package game.model;
 public class HeroBullet2 extends FlyObject{
 
     public HeroBullet2(int x, int y) {
-        super(x, y, 30, 30, Resources.hBullet2PNG);
+        super(x, y, 50, 50, Resources.hBullet2PNG);
     }
 
     @Override
-    public void move(long time,int ex) {
+    public void move(long time,int index) {
         if (time % 2 == 0){
-            if (ex < x){
-                x -= 6;
-            }else {
-                x += 6;
-            }
+            x += 10;
         }
     }
 }

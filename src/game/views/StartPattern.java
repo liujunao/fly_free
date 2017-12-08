@@ -51,7 +51,7 @@ public class StartPattern extends JFrame {
         jButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new GameFrame(0);
+                SelectLevel.gameFrame = new GameFrame(0);
                 dispose();
                 repaint();
             }

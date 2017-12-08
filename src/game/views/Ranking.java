@@ -39,14 +39,13 @@ public class Ranking extends JFrame{
         JLabel jLabelScore = null;
         List<Player> players = getInfo();
         int playerSize;
-        if (players.size() <= 9){
+        if (players.size() <= 8){
             playerSize = players.size();
         }else {
-            playerSize = 9;
+            playerSize = 8;
         }
         for (int i = 0; i < playerSize; i++) {
             jLabelSort = new JLabel(String.valueOf(i + 1));
-            System.out.println(jLabelSort);
             jLabelName = new JLabel(players.get(i).getName());
             jLabelScore = new JLabel(String.valueOf(players.get(i).getScore()));
             jLabelSort.setBounds(290,180 + 30 * i,30,25);
@@ -59,7 +58,6 @@ public class Ranking extends JFrame{
             getContentPane().add(jLabelScore);
             getContentPane().add(jLabelSort);
         }
-
     }
 
     public Ranking() {
@@ -67,11 +65,13 @@ public class Ranking extends JFrame{
         JLabel jLabel = new JLabel(imageIcon);
         jLabel.setBounds(0,0,frameSize.width,frameSize.height);
         imageIcon.getIconHeight();
+
         JPanel jPanel = (JPanel) this.getContentPane();
         jPanel.setOpaque(false);
         this.getLayeredPane().setLayout(null);
         this.getLayeredPane().add(jLabel,new Integer(Integer.MIN_VALUE));
         jPanel.setLayout(new BorderLayout());
+
         //设置窗体属性
         setSize(frameSize);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -16,7 +16,7 @@ public class Enemy extends FlyObject {
     @Override
     public void move(long time,int index) {
         if (time % 2 == 0){
-            x -= 2 * (3 - index);
+            x -= 3 * index;
         }
     }
 

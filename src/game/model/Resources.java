@@ -59,6 +59,11 @@ public class Resources {
     //排行榜
     public static BufferedImage rankingListPNG;
 
+    //返回图片
+    public static BufferedImage backPNG;
+    //停止图片
+    public static BufferedImage stopPNG;
+
     static {
         try {
             //加血
@@ -142,6 +147,11 @@ public class Resources {
                     .getResourceAsStream("/game/img/tomb.png"));
             //排行榜
             rankingListPNG = ImageIO.read(Resources.class.getResourceAsStream("/game/img/rankingList.jpg"));
+
+            //返回图片
+            backPNG = ImageIO.read(Resources.class.getResourceAsStream("/game/img/back.jpg"));
+            //暂停图片
+            stopPNG = ImageIO.read(Resources.class.getResourceAsStream("/game/img/stop.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
