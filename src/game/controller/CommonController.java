@@ -174,7 +174,7 @@ public class CommonController {
         int hy = hero.getY();
         int ex = enemyBullets.get(i).getX();
         int ey = enemyBullets.get(i).getY();
-        if (hx - ex < 20 && ex - hx < 120 && hy - ey < 120 && ey - hy < 20) {
+        if (hx - ex < 20 && ex - hx < 120 && hy - ey < 20 && ey - hy < 120) {
             enemyBullets.remove(enemyBullets.get(i));
             GameController.life--;
             if (GameController.life > 0 && GameController.life < lives.size()) {
@@ -198,7 +198,7 @@ public class CommonController {
         int hy = hero.getY();
         int bx = bossBullets.get(i).getX();
         int by = bossBullets.get(i).getY();
-        if (hx - bx < 20 && bx - hx < 120 && hy - by < 120 && by - hy < 20){
+        if (hx - bx < 20 && bx - hx < 120 && hy - by < 20 && by - hy < 120){
             bossBullets.remove(bossBullets.get(i));
             GameController.life--;
             if (GameController.life > 0 && GameController.life < lives.size()) {
@@ -403,7 +403,7 @@ public class CommonController {
         int ey = (int) (Math.random() * 600 - 50) >= 0 ? (int) (Math.random() * 600 - 50) : 0;
         if (enemy1.size() < 7 && time % 300 == 0) {
             Enemy enemy = null;
-            if (stage == 0) {
+            if (stage == 4) {
                 enemy = new Enemy(1000, ey, 45, 45, Resources.enemy11PNG);
             }
             if (stage == 1) {
@@ -418,7 +418,7 @@ public class CommonController {
             enemy1.add(enemy);
         } else if (enemy2.size() < 5 && time % 400 == 0) {
             Enemy enemy = null;
-            if (stage == 0) {
+            if (stage == 4) {
                 enemy = new Enemy(1000, ey, 90, 90, Resources.enemy12PNG);
             }
             if (stage == 1) {
@@ -433,7 +433,7 @@ public class CommonController {
             enemy2.add(enemy);
         } else if (enemy3.size() < 3 && time % 500 == 0) {
             Enemy enemy = null;
-            if (stage == 0) {
+            if (stage == 4) {
                 enemy = new Enemy(1000, ey, 135, 135, Resources.enemy13PNG);
             }
             if (stage == 1) {

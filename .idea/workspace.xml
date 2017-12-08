@@ -2,37 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e61702-b592-44a1-8b45-7507e47966e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/img/back.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/img/stop.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/game/views/StartMenu$4.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/controller/CommonController.class" afterPath="$PROJECT_DIR$/classes/game/controller/CommonController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/controller/GameController$1.class" afterPath="$PROJECT_DIR$/classes/game/controller/GameController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/controller/GameController.class" afterPath="$PROJECT_DIR$/classes/game/controller/GameController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/img/startGame.jpg" afterPath="$PROJECT_DIR$/classes/game/img/startGame.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/model/Boss.class" afterPath="$PROJECT_DIR$/classes/game/model/Boss.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/model/Enemy.class" afterPath="$PROJECT_DIR$/classes/game/model/Enemy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/model/Hero.class" afterPath="$PROJECT_DIR$/classes/game/model/Hero.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/model/HeroBullet2.class" afterPath="$PROJECT_DIR$/classes/game/model/HeroBullet2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/model/Resources.class" afterPath="$PROJECT_DIR$/classes/game/model/Resources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/GameFrame.class" afterPath="$PROJECT_DIR$/classes/game/views/GameFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/Ranking.class" afterPath="$PROJECT_DIR$/classes/game/views/Ranking.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartMenu$1.class" afterPath="$PROJECT_DIR$/classes/game/views/StartMenu$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartMenu$2.class" afterPath="$PROJECT_DIR$/classes/game/views/StartMenu$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartMenu$3.class" afterPath="$PROJECT_DIR$/classes/game/views/StartMenu$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartMenu.class" afterPath="$PROJECT_DIR$/classes/game/views/StartMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel$1.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel$2.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel$3.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/SelectLevel.class" afterPath="$PROJECT_DIR$/classes/game/views/SelectLevel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartPattern$1.class" afterPath="$PROJECT_DIR$/classes/game/views/StartPattern$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartPattern$2.class" afterPath="$PROJECT_DIR$/classes/game/views/StartPattern$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/img/startGame.jpg" afterPath="$PROJECT_DIR$/src/game/img/startGame.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/game/views/StartPattern.class" afterPath="$PROJECT_DIR$/classes/game/views/StartPattern.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rankingList.txt" afterPath="$PROJECT_DIR$/rankingList.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/controller/CommonController.java" afterPath="$PROJECT_DIR$/src/game/controller/CommonController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/controller/GameController.java" afterPath="$PROJECT_DIR$/src/game/controller/GameController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/model/Boss.java" afterPath="$PROJECT_DIR$/src/game/model/Boss.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/model/Enemy.java" afterPath="$PROJECT_DIR$/src/game/model/Enemy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/model/Hero.java" afterPath="$PROJECT_DIR$/src/game/model/Hero.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/model/HeroBullet2.java" afterPath="$PROJECT_DIR$/src/game/model/HeroBullet2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/model/Resources.java" afterPath="$PROJECT_DIR$/src/game/model/Resources.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/GameFrame.java" afterPath="$PROJECT_DIR$/src/game/views/GameFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/Ranking.java" afterPath="$PROJECT_DIR$/src/game/views/Ranking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/StartMenu.java" afterPath="$PROJECT_DIR$/src/game/views/StartMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/SelectLevel.java" afterPath="$PROJECT_DIR$/src/game/views/SelectLevel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/views/StartPattern.java" afterPath="$PROJECT_DIR$/src/game/views/StartPattern.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -54,34 +38,33 @@
       <file leaf-file-name="CommonController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/controller/CommonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="177" column="52" lean-forward="true" selection-start-line="177" selection-start-column="52" selection-end-line="177" selection-end-column="52" />
+            <state relative-caret-position="-1026">
+              <caret line="435" column="26" lean-forward="false" selection-start-line="435" selection-start-column="26" selection-end-line="435" selection-end-column="26" />
               <folding>
                 <element signature="docComment;class#CommonController#0" expanded="false" />
                 <element signature="method#enemyMove#0;class#CommonController#0" expanded="false" />
                 <element signature="method#enemyBulletVSHeroBullet#0;class#CommonController#0" expanded="false" />
                 <element signature="method#heroBulletAndEnemyBullets#0;class#CommonController#0" expanded="false" />
                 <element signature="method#heroBulletAndBossBullets#0;class#CommonController#0" expanded="false" />
+                <element signature="method#enemyBulletVSHero#0;class#CommonController#0" expanded="false" />
+                <element signature="method#bossBulletVSHero#0;class#CommonController#0" expanded="false" />
                 <element signature="method#heroBullet1VSEnemy#0;class#CommonController#0" expanded="false" />
                 <element signature="method#heroBullet2VSEnemy#0;class#CommonController#0" expanded="false" />
                 <element signature="method#traverseEnemy#0;class#CommonController#0" expanded="false" />
                 <element signature="method#heroBulletVSBoss#0;class#CommonController#0" expanded="false" />
-                <element signature="method#enemyFire#0;class#CommonController#0" expanded="false" />
                 <element signature="method#bossFire#0;class#CommonController#0" expanded="false" />
-                <element signature="method#addNewEnemy#0;class#CommonController#0" expanded="false" />
                 <element signature="method#addNewLife#0;class#CommonController#0" expanded="false" />
                 <element signature="method#addLifeMove#0;class#CommonController#0" expanded="false" />
-                <element signature="method#addLifeVSHero#0;class#CommonController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartMenu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StartMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/views/StartMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="62" column="38" lean-forward="false" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+            <state relative-caret-position="1219">
+              <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding>
                 <element signature="docComment;class#StartMenu#0" expanded="false" />
               </folding>
@@ -89,48 +72,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resources.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/model/Resources.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-              <folding>
-                <element signature="docComment;class#Resources#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ranking.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/views/Ranking.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-              <folding>
-                <element signature="docComment;class#Ranking#0" expanded="false" />
-                <element signature="method#getInfo#0;class#Ranking#0" expanded="false" />
-                <element signature="method#addComponent#0;class#Ranking#0" expanded="false" />
-                <element signature="method#Ranking#0;class#Ranking#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/controller/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+            <state relative-caret-position="74">
+              <caret line="218" column="22" lean-forward="false" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
               <folding>
                 <element signature="docComment;class#GameController#0" expanded="false" />
                 <element signature="method#keyTyped#0;class#GameController#0" expanded="false" />
                 <element signature="method#keyPressed#0;class#GameController#0" expanded="false" />
                 <element signature="method#keyReleased#0;class#GameController#0" expanded="false" />
-                <element signature="method#paint#0;class#GameController#0" expanded="false" />
                 <element signature="method#vk#0;class#GameController#0" expanded="false" />
-                <element signature="method#judge#0;class#GameController#0" expanded="false" />
-                <element signature="method#winChange#0;class#GameController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnemyBullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/model/EnemyBullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/game/views/StartPattern.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
+              <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -148,8 +111,8 @@
       <file leaf-file-name="SelectLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/views/SelectLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="138">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#SelectLevel#0" expanded="false" />
               </folding>
@@ -160,8 +123,8 @@
       <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/views/GameFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="184">
+              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
               <folding>
                 <element signature="docComment;class#GameFrame#0" expanded="false" />
               </folding>
@@ -222,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/game/model/EnemyBullet.java" />
         <option value="$PROJECT_DIR$/src/game/model/FlyObject.java" />
         <option value="$PROJECT_DIR$/src/game/controller/DoDispose.java" />
-        <option value="$PROJECT_DIR$/src/game/views/SelectLevel.java" />
         <option value="$PROJECT_DIR$/src/game/views/GameOver.java" />
         <option value="$PROJECT_DIR$/src/game/views/RankingList.java" />
         <option value="$PROJECT_DIR$/test/RankingTest.java" />
@@ -240,9 +202,10 @@
         <option value="$PROJECT_DIR$/src/game/views/StartMenu.java" />
         <option value="$PROJECT_DIR$/src/game/views/GameFrame.java" />
         <option value="$PROJECT_DIR$/src/game/views/Ranking.java" />
+        <option value="$PROJECT_DIR$/src/game/views/SelectLevel.java" />
+        <option value="$PROJECT_DIR$/src/game/controller/CommonController.java" />
         <option value="$PROJECT_DIR$/src/game/views/StartPattern.java" />
         <option value="$PROJECT_DIR$/src/game/controller/GameController.java" />
-        <option value="$PROJECT_DIR$/src/game/controller/CommonController.java" />
       </list>
     </option>
   </component>
@@ -275,7 +238,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,10 +310,6 @@
               <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -391,24 +350,6 @@
               <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fly_free" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fly_free" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -416,7 +357,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -987,7 +928,8 @@
       <workItem from="1512391561514" duration="15618000" />
       <workItem from="1512459438071" duration="9018000" />
       <workItem from="1512470591602" duration="5577000" />
-      <workItem from="1512712352267" duration="3379000" />
+      <workItem from="1512712352267" duration="3755000" />
+      <workItem from="1512717504804" duration="2097000" />
     </task>
     <task id="LOCAL-00001" summary="大二上面向对象课设，潜艇大战">
       <created>1512468561379</created>
@@ -1039,9 +981,9 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119633000" />
+    <option name="totallyTimeSpent" value="122106000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -1052,10 +994,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1063,20 +1004,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40137222" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18305598" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18305598" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37328768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5831904" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1084,7 +1026,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1092,6 +1033,32 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1102,7 +1069,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1249,13 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/model/EnemyBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/model/BossBullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -1267,23 +1227,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="20" column="9" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/img/hbullet2.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/model/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#Enemy#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/model/HeroBullet2.java">
@@ -1337,34 +1286,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/SelectLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          <folding>
-            <element signature="docComment;class#SelectLevel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/StartPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/views/GameFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding>
-            <element signature="docComment;class#GameFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/img/enemy11.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1380,50 +1301,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controller/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-          <folding>
-            <element signature="docComment;class#GameController#0" expanded="false" />
-            <element signature="method#keyTyped#0;class#GameController#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#GameController#0" expanded="false" />
-            <element signature="method#keyReleased#0;class#GameController#0" expanded="false" />
-            <element signature="method#paint#0;class#GameController#0" expanded="false" />
-            <element signature="method#vk#0;class#GameController#0" expanded="false" />
-            <element signature="method#judge#0;class#GameController#0" expanded="false" />
-            <element signature="method#winChange#0;class#GameController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controller/CommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="177" column="52" lean-forward="true" selection-start-line="177" selection-start-column="52" selection-end-line="177" selection-end-column="52" />
-          <folding>
-            <element signature="docComment;class#CommonController#0" expanded="false" />
-            <element signature="method#enemyMove#0;class#CommonController#0" expanded="false" />
-            <element signature="method#enemyBulletVSHeroBullet#0;class#CommonController#0" expanded="false" />
-            <element signature="method#heroBulletAndEnemyBullets#0;class#CommonController#0" expanded="false" />
-            <element signature="method#heroBulletAndBossBullets#0;class#CommonController#0" expanded="false" />
-            <element signature="method#heroBullet1VSEnemy#0;class#CommonController#0" expanded="false" />
-            <element signature="method#heroBullet2VSEnemy#0;class#CommonController#0" expanded="false" />
-            <element signature="method#traverseEnemy#0;class#CommonController#0" expanded="false" />
-            <element signature="method#heroBulletVSBoss#0;class#CommonController#0" expanded="false" />
-            <element signature="method#enemyFire#0;class#CommonController#0" expanded="false" />
-            <element signature="method#bossFire#0;class#CommonController#0" expanded="false" />
-            <element signature="method#addNewEnemy#0;class#CommonController#0" expanded="false" />
-            <element signature="method#addNewLife#0;class#CommonController#0" expanded="false" />
-            <element signature="method#addLifeMove#0;class#CommonController#0" expanded="false" />
-            <element signature="method#addLifeVSHero#0;class#CommonController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/model/Resources.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="1196">
           <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
           <folding>
             <element signature="docComment;class#Resources#0" expanded="false" />
@@ -1446,10 +1326,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/views/StartMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="62" column="38" lean-forward="false" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        <state relative-caret-position="1219">
+          <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#StartMenu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/views/SelectLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#SelectLevel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/views/GameFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding>
+            <element signature="docComment;class#GameFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/model/EnemyBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/model/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#Enemy#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controller/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="435" column="26" lean-forward="false" selection-start-line="435" selection-start-column="26" selection-end-line="435" selection-end-column="26" />
+          <folding>
+            <element signature="docComment;class#CommonController#0" expanded="false" />
+            <element signature="method#enemyMove#0;class#CommonController#0" expanded="false" />
+            <element signature="method#enemyBulletVSHeroBullet#0;class#CommonController#0" expanded="false" />
+            <element signature="method#heroBulletAndEnemyBullets#0;class#CommonController#0" expanded="false" />
+            <element signature="method#heroBulletAndBossBullets#0;class#CommonController#0" expanded="false" />
+            <element signature="method#enemyBulletVSHero#0;class#CommonController#0" expanded="false" />
+            <element signature="method#bossBulletVSHero#0;class#CommonController#0" expanded="false" />
+            <element signature="method#heroBullet1VSEnemy#0;class#CommonController#0" expanded="false" />
+            <element signature="method#heroBullet2VSEnemy#0;class#CommonController#0" expanded="false" />
+            <element signature="method#traverseEnemy#0;class#CommonController#0" expanded="false" />
+            <element signature="method#heroBulletVSBoss#0;class#CommonController#0" expanded="false" />
+            <element signature="method#bossFire#0;class#CommonController#0" expanded="false" />
+            <element signature="method#addNewLife#0;class#CommonController#0" expanded="false" />
+            <element signature="method#addLifeMove#0;class#CommonController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/views/StartPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controller/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="218" column="22" lean-forward="false" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;class#GameController#0" expanded="false" />
+            <element signature="method#keyTyped#0;class#GameController#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#GameController#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#GameController#0" expanded="false" />
+            <element signature="method#vk#0;class#GameController#0" expanded="false" />
           </folding>
         </state>
       </provider>

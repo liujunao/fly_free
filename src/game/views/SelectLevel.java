@@ -18,8 +18,6 @@ public class SelectLevel extends JFrame {
     Dimension dimension = new Dimension(1000, 600);
     ImageIcon imageIcon = new ImageIcon(Resources.selectLevel);
 
-    public static GameFrame gameFrame = null;
-
     public SelectLevel() throws HeadlessException {
         setSize(dimension);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -41,7 +39,7 @@ public class SelectLevel extends JFrame {
         jButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                gameFrame = new GameFrame(1);
+                StartPattern.gameFrame = new GameFrame(1);
                 dispose();
                 repaint();
             }
@@ -53,7 +51,7 @@ public class SelectLevel extends JFrame {
         jButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                gameFrame = new GameFrame(2);
+                StartPattern.gameFrame = new GameFrame(2);
                 dispose();
                 repaint();
             }
@@ -65,7 +63,7 @@ public class SelectLevel extends JFrame {
         jButton3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                gameFrame = new GameFrame(3);
+                StartPattern.gameFrame = new GameFrame(3);
                 dispose();
                 repaint();
             }

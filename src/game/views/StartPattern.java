@@ -17,6 +17,8 @@ public class StartPattern extends JFrame {
     Dimension dimension = new Dimension(1000, 600);
     ImageIcon imageIcon = new ImageIcon(Resources.selectPattern);
 
+    public static GameFrame gameFrame = null;
+
     public StartPattern() throws HeadlessException {
         setSize(dimension);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -51,7 +53,7 @@ public class StartPattern extends JFrame {
         jButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                SelectLevel.gameFrame = new GameFrame(0);
+                StartPattern.gameFrame = new GameFrame(4);
                 dispose();
                 repaint();
             }

@@ -2,7 +2,7 @@ package game.controller;
 
 import game.model.*;
 import game.views.GameOver;
-import game.views.SelectLevel;
+import game.views.StartPattern;
 
 import javax.swing.*;
 import java.awt.*;
@@ -136,14 +136,12 @@ public class GameController extends JPanel implements KeyListener, Serializable 
         for (Lives lives : lives) {
             lives.draw(graphics);
         }
-        System.out.println("lives: " + lives.size());
         for (AddLife addLife : addLife) {
             addLife.draw(graphics);
         }
         for (Enemy enemy1 : enemy1) {
             enemy1.draw(graphics);
         }
-        System.out.println("enemy1： " + enemy1.size());
         for (Enemy enemy2 : enemy2) {
             enemy2.draw(graphics);
         }
@@ -153,7 +151,6 @@ public class GameController extends JPanel implements KeyListener, Serializable 
         for (EnemyBullet enemyBullet1 : enemyBullet1) {
             enemyBullet1.draw(graphics);
         }
-        System.out.println("enemyBullet1: " + enemyBullet1.size());
         for (EnemyBullet enemyBullet2 : enemyBullet2) {
             enemyBullet2.draw(graphics);
         }
@@ -168,7 +165,7 @@ public class GameController extends JPanel implements KeyListener, Serializable 
         }
         hero.draw(graphics);
 
-        if (stage != 0) {
+        if (stage != 4) {
             if (mScore >= 200) {
                 if (bossBlood1 >= 0 || bossBlood2 >= 0 || bossBlood3 >= 0) {
                     for (BossBullet bossBullet : bossBullets){
@@ -219,7 +216,7 @@ public class GameController extends JPanel implements KeyListener, Serializable 
     public void judge(long time, int stage) {
         CommonController commonController = new CommonController();
         //初始化背景
-        if (stage == 0) {
+        if (stage == 4) {
             background = new Background(0, 0, Resources.backgroundEverJPG);
         }
         if (stage == 1) {
@@ -303,20 +300,20 @@ public class GameController extends JPanel implements KeyListener, Serializable 
     //窗口转换之间的条件
     public void winChange() {
         if (bossBlood1 <= 0 && stage == 1) {
-            if (SelectLevel.gameFrame != null) {
-                SelectLevel.gameFrame.setVisible(false);
+            if (StartPattern.gameFrame != null) {
+                StartPattern.gameFrame.setVisible(false);
             }
             new GameOver();
             repaint();
         } else if (bossBlood2 <= 0 && stage == 2) {
-            if (SelectLevel.gameFrame != null) {
-                SelectLevel.gameFrame.setVisible(false);
+            if (StartPattern.gameFrame != null) {
+                StartPattern.gameFrame.setVisible(false);
             }
             new GameOver();
             repaint();
         } else if (bossBlood3 <= 0 && stage == 3) {
-            if (SelectLevel.gameFrame != null) {
-                SelectLevel.gameFrame.setVisible(false);
+            if (StartPattern.gameFrame != null) {
+                StartPattern.gameFrame.setVisible(false);
             }
             new GameOver();
             repaint();
@@ -326,7 +323,6 @@ public class GameController extends JPanel implements KeyListener, Serializable 
     public GameController(int stage) {
         mScore = 0;
         this.stage = stage;
-        System.out.println("stage: " + this.stage);
         this.addKeyListener(this);
         hero = new Hero(50, 300);
 
@@ -351,8 +347,8 @@ public class GameController extends JPanel implements KeyListener, Serializable 
                     time += 2;
                     //窗口转换
                     if (life < 1) {
-                        if (SelectLevel.gameFrame != null) {
-                            SelectLevel.gameFrame.setVisible(false);
+                        if (StartPattern.gameFrame != null) {
+                            StartPattern.gameFrame.setVisible(false);
                         }
                         new GameOver();
                         repaint();
