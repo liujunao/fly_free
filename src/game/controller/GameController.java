@@ -303,24 +303,30 @@ public class GameController extends JPanel implements KeyListener, Serializable 
             if (StartPattern.gameFrame != null) {
                 StartPattern.gameFrame.setVisible(false);
             }
-            new GameOver();
+            GameOver.gameOver = new GameOver();
             repaint();
         } else if (bossBlood2 <= 0 && stage == 2) {
             if (StartPattern.gameFrame != null) {
                 StartPattern.gameFrame.setVisible(false);
             }
-            new GameOver();
+            GameOver.gameOver = new GameOver();
             repaint();
         } else if (bossBlood3 <= 0 && stage == 3) {
             if (StartPattern.gameFrame != null) {
                 StartPattern.gameFrame.setVisible(false);
             }
-            new GameOver();
+            GameOver.gameOver = new GameOver();
             repaint();
         }
     }
 
     public GameController(int stage) {
+        bossBlood1 = 2000;
+        bossBlood2 = 2000;
+        bossBlood3 = 2000;
+        money = 0;
+        life = 3;
+        score = 0;
         mScore = 0;
         this.stage = stage;
         this.addKeyListener(this);
@@ -350,7 +356,7 @@ public class GameController extends JPanel implements KeyListener, Serializable 
                         if (StartPattern.gameFrame != null) {
                             StartPattern.gameFrame.setVisible(false);
                         }
-                        new GameOver();
+                        GameOver.gameOver = new GameOver();
                         repaint();
                         while (life < 1) {
                             try {

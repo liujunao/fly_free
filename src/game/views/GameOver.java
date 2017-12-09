@@ -25,6 +25,8 @@ public class GameOver extends JFrame {
     Dimension dimension = new Dimension(1000, 600);
     ImageIcon imageIcon = new ImageIcon(Resources.gameoverPNG);
 
+    public static GameOver gameOver = null;
+
     public GameOver() {
         //设置窗体属性
         setSize(dimension);
@@ -63,6 +65,7 @@ public class GameOver extends JFrame {
                 File file = new File("rankingList.txt");
                 rankingList.importCsv(file,player);
                 new StartMenu();
+                GameOver.gameOver = null;
                 dispose();
                 repaint();
             }
